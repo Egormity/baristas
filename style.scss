@@ -1,0 +1,29 @@
+@import 'style/abstracts/mixins';
+@import 'style/abstracts/variables';
+
+@import 'style/base/base';
+@import 'style/base/typography';
+@import 'style/base/utilities';
+
+@import 'style/components/bg-gradien-primary';
+@import 'style/components/buttons';
+@import 'style/components/reservation';
+@import 'style/components/nav';
+@import 'style/components/section-about';
+@import 'style/components/section-menu';
+@import 'style/components/section-people';
+@import 'style/components/section-testimonials';
+
+@import 'style/layout/footer';
+@import 'style/layout/header';
+// @import 'style/layout/LYAOUT';
+// @import 'style/layout/LYAOUT';
+
+// @import 'style/pages/PAGE';
+// @import 'style/pages/PAGE';
+// @import 'style/pages/PAGE';
+
+///// 1. Fluid layouts
+///// 2. Responsive units
+///// 3. Flexible images
+///// 4. Media queries

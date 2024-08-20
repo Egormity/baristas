@@ -1,0 +1,237 @@
+.footer {
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      var(--color-primary)
+    ),
+    url('images/young-female-barista.jpg');
+  background-position: center;
+  background-size: cover;
+  @include flex-center;
+  flex-direction: column;
+  padding: 8rem 0;
+
+  @include responsive(px1100) {
+    padding: 4rem 0;
+  }
+
+  &__container {
+    position: relative;
+    @include flex-center;
+    flex-direction: column;
+    width: 100rem;
+
+    @include responsive(px1000) {
+      width: 90rem;
+    }
+
+    @include responsive(px900) {
+      width: 85vw;
+    }
+  }
+
+  &__container-top {
+    display: flex;
+    justify-content: center;
+
+    @include responsive(px900) {
+      flex-direction: column;
+    }
+
+    & .description-primary {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__top-left {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    height: 30rem;
+    position: relative;
+
+    @include responsive(px1000) {
+      width: 45rem;
+    }
+
+    @include responsive(px900) {
+      width: 85vw;
+    }
+
+    &--top {
+      display: flex;
+    }
+  }
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    align-self: stretch;
+
+    & label {
+      width: fit-content;
+    }
+  }
+
+  &__help-container {
+    align-self: stretch;
+  }
+
+  &__textarea {
+    height: 15rem;
+  }
+
+  &__input,
+  &__textarea {
+    border-radius: 0.75rem;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    color: inherit;
+    font-size: 1.6rem;
+    @include bg-transparent-primary;
+
+    &::placeholder {
+      color: var(--color-grey-light-4);
+      font-weight: 300;
+    }
+  }
+
+  &__input {
+    width: 23rem;
+
+    @include responsive(px1000) {
+      width: 20.5rem;
+    }
+
+    @include responsive(px900) {
+      width: 40vw;
+    }
+  }
+
+  &__map {
+    height: 30rem;
+    width: 50rem;
+    border: none;
+    border-radius: 1rem;
+
+    @include responsive(px1000) {
+      width: 45rem;
+    }
+
+    @include responsive(px900) {
+      margin-top: 10rem;
+      width: 85vw;
+    }
+  }
+
+  &__btn {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 20rem;
+    padding: 1rem;
+    position: relative;
+    left: 20%;
+    transform: translateX(-20%);
+
+    @include responsive(px900) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 41.5rem;
+    }
+  }
+
+  &__bottom {
+    border-top: var(--border-light-3);
+    margin-top: 5rem;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100rem;
+
+    @include responsive(px1000) {
+      width: 90rem;
+    }
+
+    @include responsive(px900) {
+      flex-direction: column;
+    }
+
+    @include responsive(px900) {
+      width: 85vw;
+      align-items: flex-start;
+    }
+
+    &--a {
+      color: var(--color-primary-very-light);
+      text-decoration: underline;
+      transition: 0.25s;
+
+      &:hover {
+        filter: brightness(125%);
+      }
+    }
+
+    &-description {
+      margin-bottom: 2rem;
+    }
+
+    &--container:not(:last-child) {
+      margin-right: 2rem;
+
+      @include responsive(px900) {
+        margin-right: 0;
+        margin-bottom: 5rem;
+      }
+    }
+
+    &-text--bold {
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+
+    &-text--light {
+      font-weight: 300;
+      font-size: 1.5rem;
+      color: var(--color-grey-light-3);
+    }
+
+    &--icons {
+      display: flex;
+      margin-top: 1rem;
+    }
+
+    &--icon {
+      font-size: 2rem;
+      @include flex-center;
+      height: 3.5rem;
+      width: 3.5rem;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 50%;
+      transition: 0.25s;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+
+      &:hover {
+        background-color: white;
+        color: var(--color-primary);
+      }
+    }
+
+    &--days {
+      display: flex;
+
+      &-text {
+        color: var(--color-grey-light-3);
+        font-weight: 600;
+        width: 15rem;
+      }
+    }
+  }
+}

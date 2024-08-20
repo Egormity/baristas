@@ -1,0 +1,61 @@
+.header {
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+  @include flex-center;
+  background-color: transparent;
+  overflow: hidden;
+
+  &__image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('images/happy-waitress.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+    transition: background-image 0.5s, transform 7.5s;
+  }
+
+  &__container {
+    @include flex-center;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  &::before {
+    content: '';
+    height: 25rem;
+    width: 25rem;
+    background-color: rgba($color-black, 0.6);
+    border-radius: 1rem;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(-45deg);
+    box-shadow: var(--shadow-btn);
+  }
+
+  &__welcome {
+    color: var(--color-primary-light);
+    font-size: 1.5rem;
+  }
+
+  &__heading {
+    font-size: 7.5rem;
+    margin: -1.75rem;
+  }
+
+  &__daily {
+    font-size: 1.8rem;
+  }
+
+  &__btn-container {
+    overflow: visible;
+  }
+
+  &__btn {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 1.5rem 2rem;
+  }
+}

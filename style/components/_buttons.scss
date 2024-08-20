@@ -1,0 +1,68 @@
+.btn--white-border {
+  text-decoration: none;
+  color: var(--color-white);
+  border: 0.2rem solid var(--color-white);
+  padding: 0.75rem 1.75rem;
+  border-radius: 10rem;
+  transition: all 0.25s;
+  box-shadow: var(--shadow-btn-small);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: var(--shadow-btn);
+    color: var(--color-primary-light);
+    border: 0.2rem solid var(--color-white);
+    background-color: var(--color-white);
+  }
+}
+
+.btn--no-border {
+  text-decoration: none;
+  color: var(--color-white);
+  padding: 0.75rem 1.75rem;
+  border-radius: 10rem;
+  transition: all 0.25s;
+  box-shadow: var(--shadow-btn-small);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: var(--shadow-btn);
+    color: var(--color-primary-light);
+    background-color: var(--color-white);
+  }
+}
+
+.btn--bg-primary {
+  background-color: var(--color-primary);
+  text-decoration: none;
+  color: var(--color-white);
+  padding: 0.75rem 1.75rem;
+  border-radius: 10rem;
+  transition: all 0.25s;
+  box-shadow: var(--shadow-btn-small);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: var(--shadow-btn);
+    filter: brightness(120%);
+  }
+}
+
+.btn--bg-primary-white {
+  background-color: var(--color-primary);
+  text-decoration: none;
+  color: var(--color-white);
+  padding: 0.75rem 1.75rem;
+  border-radius: 10rem;
+  transition: all 0.25s;
+  box-shadow: var(--shadow-btn-small);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-primary);
+    box-shadow: var(--shadow-btn);
+    background-color: var(--color-white);
+  }
+}

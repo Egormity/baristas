@@ -1,0 +1,152 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bg-transparent-primary {
+  border: 0.1rem solid rgba($color-grey-light-3, 0.6);
+  background-color: transparent;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: var(--color-primary);
+    border: 0.1rem solid transparent;
+  }
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == px300 {
+    @media only screen and (max-width: 18.75em) {
+      // 300px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px400 {
+    @media only screen and (max-width: 25em) {
+      // 400px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px500 {
+    @media only screen and (max-width: 31.25em) {
+      // 500px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px600 {
+    @media only screen and (max-width: 37.5em) {
+      // 600px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px700 {
+    @media only screen and (max-width: 43.75em) {
+      // 700px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px800 {
+    @media only screen and (max-width: 50em) {
+      // 800px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px900 {
+    @media only screen and (max-width: 56.25em) {
+      // 900px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px1000 {
+    @media only screen and (max-width: 62.5em) {
+      // 1000px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px1100 {
+    @media only screen and (max-width: 68.75em) {
+      // 1100px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px1200 {
+    @media only screen and (max-width: 75em) {
+      // 1200px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px1300 {
+    @media only screen and (max-width: 81.25em) {
+      // 1300px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px1400 {
+    @media only screen and (max-width: 87.5em) {
+      // 1400px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px1500 {
+    @media only screen and (max-width: 93.75em) {
+      // 1500px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px1600 {
+    @media only screen and (max-width: 100em) {
+      // 1600px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px1700 {
+    @media only screen and (max-width: 106.25em) {
+      // 1700px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px1800 {
+    @media only screen and (min-width: 112.5em) {
+      // 1800px
+      @content;
+    }
+  }
+
+  @if $breakpoint == px1900 {
+    @media only screen and (min-width: 118.75em) {
+      // 1900px
+      @content;
+    }
+  }
+}

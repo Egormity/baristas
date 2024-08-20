@@ -1,0 +1,83 @@
+.people {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-people-dark),
+    var(--color-people-light)
+  );
+  @include flex-center;
+  flex-direction: column;
+  padding: 8rem 0;
+
+  @include responsive(px1100) {
+    padding: 4rem 0;
+  }
+
+  &__baristas {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  &__heading {
+    margin-top: -1rem;
+    font-size: 4rem;
+  }
+
+  &__container {
+    @include flex-center;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__card {
+    position: relative;
+    height: 40rem;
+    width: 30rem;
+    border-radius: 1.5rem;
+    margin: 1.5rem;
+    transition: 0.25s;
+
+    @include responsive(px700) {
+      width: 60vw;
+      height: calc(60vw * 4 / 3);
+    }
+
+    @include responsive(px600) {
+      width: 80vw;
+      height: calc(80vw * 4 / 3);
+    }
+
+    &:hover {
+      transform: scale(1.025);
+    }
+  }
+
+  &__bottom {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    bottom: 0;
+    padding: 2rem 3rem;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+
+    &--name {
+      font-size: 3rem;
+      margin-right: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}

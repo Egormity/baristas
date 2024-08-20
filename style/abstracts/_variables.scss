@@ -1,0 +1,78 @@
+:root {
+  // Colors
+  --color-primary: #bc6c25;
+  --color-primary-light: #dda15e;
+  --color-primary-dark: #b06625;
+  --color-primary-very-light: #ffcb90;
+
+  --color-about-dark: #4d3821;
+  --color-about-light: #573f25;
+
+  --color-people-dark: #a07547;
+  --color-people-light: #b78752;
+
+  --color-teestimonials-dark: #7c5c52;
+  --color-teestimonials-light: #8f695e;
+
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #eee;
+  --color-grey-light-3: #dedede;
+  --color-grey-light-4: #d0d0d0;
+
+  --color-grey-dark-1: #999;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-4: #555;
+  --color-grey-dark-3: #333;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-grey-transp: hsl(0, 0%, 65%, 0.55);
+
+  // Font
+  --default-font-size: 1.6rem;
+
+  // Borders
+  --border-light-1: 0.1rem solid var(--color-grey-light-1);
+  --border-light-2: 0.1rem solid var(--color-grey-light-2);
+  --border-light-3: 0.1rem solid var(--color-grey-light-3);
+  --border-light-4: 0.1rem solid var(--color-grey-light-4);
+
+  --border-dark-1: 0.1rem solid $color-grey-dark-1;
+
+  // Shadows
+  --shadow-btn-small: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --shadow-btn: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+// Colors
+$color-primary: #bc6c25;
+$color-primary-light: #dda15e;
+$color-primary-dark: #b06625;
+
+$color-about-dark: #4d3821;
+$color-about-light: #573f25;
+
+$color-people-dark: #a07547;
+$color-people-light: #b78752;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #dedede;
+$color-grey-light-4: #d0d0d0;
+
+$color-grey-dark-1: #999;
+$color-grey-dark-2: #777;
+$color-grey-dark-4: #555;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+// Font
+$default-font-size: 1.6rem;
+
+// Borders
+$border-light-1: 0.1rem solid $color-grey-light-1;
+$border-light-2: 0.1rem solid $color-grey-light-2;
+$border-light-3: 0.1rem solid $color-grey-light-3;

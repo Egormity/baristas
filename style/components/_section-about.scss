@@ -1,0 +1,107 @@
+.about {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-about-dark),
+    var(--color-about-light)
+  );
+  padding: 10rem 3rem;
+  @include flex-center;
+
+  @include responsive(px1100) {
+    padding: 6rem 2rem;
+  }
+
+  @include responsive(px900) {
+    flex-direction: column;
+  }
+
+  &__container {
+    @include flex-center;
+  }
+
+  &__video {
+    font-size: 1.8rem;
+    height: 60rem;
+    width: 60rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.5rem;
+    margin-right: 5rem;
+
+    @include responsive(px1100) {
+      height: 40vw;
+      width: 40vw;
+    }
+
+    @include responsive(px900) {
+      margin: 0;
+      margin-bottom: 3rem;
+      height: 80vw;
+      width: 80vw;
+    }
+
+    &--video {
+      @include absolute-center;
+      opacity: 0.8;
+      z-index: 1;
+    }
+
+    & video {
+      width: 100%;
+    }
+
+    &--text {
+      position: absolute;
+      left: 3rem;
+      bottom: 4rem;
+      z-index: 5;
+    }
+  }
+
+  &__info {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(px1100) {
+      width: 40vw;
+    }
+
+    @include responsive(px900) {
+      height: 80vw;
+      width: 80vw;
+    }
+
+    &--baristas {
+      font-style: italic;
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+
+    &--heading {
+      font-size: 5rem;
+      margin-top: -1.25rem;
+    }
+
+    &--text {
+      font-size: 1.9rem;
+      margin-bottom: 2rem;
+
+      & a {
+        text-decoration: none;
+        color: var(--color-primary);
+        transition: 0.25s;
+
+        &:hover {
+          color: var(--color-primary-light);
+        }
+      }
+    }
+
+    &--btn {
+      font-size: 1.7rem;
+      width: fit-content;
+      font-weight: 600;
+    }
+  }
+}

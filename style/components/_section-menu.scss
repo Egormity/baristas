@@ -1,0 +1,103 @@
+.menu {
+  background-image: url('images/happy-waitress.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 8rem 2rem;
+
+  @include responsive(px1100) {
+    padding: 4rem 0;
+  }
+
+  &__container {
+    @include flex-center;
+
+    @include responsive(px900) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    margin: 1.5rem;
+    background-color: rgba($color-black, 0.6);
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    @include flex-center;
+    flex-direction: column;
+  }
+
+  &__description {
+    font-style: italic;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    margin-top: -0.5rem;
+  }
+
+  &__item {
+    width: 50rem;
+
+    @include responsive(px1300) {
+      width: 40vw;
+    }
+
+    @include responsive(px900) {
+      width: 80vw;
+    }
+
+    @include responsive(px600) {
+      width: 70vw;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &--top {
+      display: flex;
+      align-items: center;
+    }
+
+    &--bottom {
+      font-size: 1.5rem;
+      color: var(--color-grey-transp);
+      border-top: 0.1rem solid var(--color-grey-transp);
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+    }
+
+    &--name {
+      font-size: 2.2rem;
+      margin-right: auto;
+    }
+
+    &--recommended {
+      margin-right: 33%;
+
+      @include responsive(px1300) {
+        margin-right: 5vw;
+      }
+
+      @include responsive(px600) {
+        margin-right: 2vw;
+      }
+    }
+
+    &--price {
+      font-size: 1.6rem;
+      color: var(--color-primary-light);
+
+      &-out {
+        color: var(--color-white);
+        text-decoration: line-through;
+        margin-right: 1rem;
+      }
+
+      &::before {
+        content: '$';
+      }
+    }
+  }
+}

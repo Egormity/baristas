@@ -1,0 +1,11 @@
+.bg--gradien-primary {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba($color-black, 0.05),
+    rgba($color-primary, 1)
+  );
+  position: relative;
+  z-index: 3;
+}
